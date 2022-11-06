@@ -1,0 +1,49 @@
+.ei-wrapper {
+  background-color: #fff;
+}
+
+.ei-logoMain {
+  flex: 1;
+}
+
+.ei-logo {
+  width: 100%;
+}
+
+.ei-info {
+  display: flex;
+  gap: 20px;
+}
+
+.ei-infoDetail {
+  flex: 2;
+}
+
+.ei-tag {
+  margin-bottom: 5px;
+}
+
+.ei-title {
+  font-family: "Oswald";
+  font-size: 35px;
+}
+
+.ei-elementCourses {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  width: 70%;
+}
+.ei-elementCoursesHead {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.ei-elementCourses ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.ei-elementCourses ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px;
+}

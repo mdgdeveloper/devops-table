@@ -1,0 +1,49 @@
+.elementMain {
+  height: 4.1vw;
+  width: 4.1vw;
+  color: white;
+  cursor: pointer;
+}
+
+.elementMain:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.element {
+  padding: 0.2vw;
+}
+
+.elementHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.elementAtomNum {
+  font-size: 0.7vw;
+  padding-left: 2px;
+}
+.elementLicense {
+  font-size: 0.8vw;
+  padding-right: 5px;
+}
+
+.elementBody {
+  margin-top: -8px;
+}
+
+.elementShortName {
+  font-size: 1.5vw;
+  font-weight: 600;
+  padding-left: 2px;
+}
+
+.elementFooter {
+  margin-top: -5px;
+}
+
+.elementName {
+  padding-left: 2px;
+  font-size: 0.7vw;
+}

@@ -1,0 +1,27 @@
+.h-main {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 14px 28px,
+    rgba(0, 0, 0, 0.05) 0px 10px 10px;
+  padding: 10px 50px;
+  align-items: center;
+  background-color: #fff;
+  min-height: 100px;
+}
+
+.h-center {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.h-subtitle {
+  font-size: 12px;
+  color: darkblue;
+  margin-top: -5px;
+}
+
+.h-mainLogo {
+  width: 15vh;
+}

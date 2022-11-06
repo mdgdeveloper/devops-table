@@ -1,34 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { FaQuestion } from "react-icons/fa";
+import { MdWorkspaces } from "react-icons/md";
+
+import Footer from "./components/layouts/Footer";
+import Header from "./components/layouts/Header";
+import Table from "./components/table/Table";
+
+import Legend from "./components/legend/Legend";
+import languageData from "./locale/index";
+
+function App({ locale = "en" }) {
+  const [language, setLanguage] = useState();
+
+  useEffect(() => {
+    if (locale === "en") setLanguage(languageData.langEN);
+  }, []);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="global">
+      {language ? (
+        <>
+          <Header />
+          <div className="main">
+            <div className="info">
+              <h2 className="a-title">
+                <FaQuestion style={{ color: "darkred" }} />
+                {language.subtitle1}
+              </h2>
+              <p className="a-paragraph">{language.content11}</p>
+              <p className="a-paragraph">{language.content12}</p>
+              <h2 className="a-title">
+                <MdWorkspaces style={{ color: "darkgreen" }} />
+                {language.subtitle2}
+              </h2>
+              <p className="a-paragraph">{language.content21}</p>
+              <p className="a-paragraph">{language.content22}</p>
+            </div>
+          </div>
+          <Legend />
+          <Table />
+          <Footer />
+        </>
+      ) : (
+        <>Loading</>
+      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

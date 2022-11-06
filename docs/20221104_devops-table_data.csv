@@ -1,0 +1,127 @@
+id;atomNum;name;shortName;link;type;license ;logo
+1;1;GitHub;Gh;github.com;source;fm;01_github.png
+2;null;;;;;;
+3;null;;;;;;
+4;null;;;;;;
+5;null;;;;;;
+6;null;;;;;;
+7;null;;;;;;
+8;null;;;;;;
+9;null;;;;;;
+10;null;;;;;;
+11;null;;;;;;
+12;null;;;;;;
+13;null;;;;;;
+14;null;;;;;;
+15;null;;;;;;
+16;null;;;;;;
+17;null;;;;;;
+18;2;Splunk;Sp;TBD;aiops;en;02_splunk.png
+19;3;Subversion;Sv;subversion.com;source;os;03_subversion.png
+20;4;Datical;Dt;TBD;database;en;04_datical.png
+21;null;;;;;;
+22;null;;;;;;
+23;null;;;;;;
+24;null;;;;;;
+25;null;;;;;;
+26;null;;;;;;
+27;null;;;;;;
+28;null;;;;;;
+29;null;;;;;;
+30;null;;;;;;
+31;5;XebiaLabs XL Release;XLr;TBD;release;en;05_xebialabs xl release.png
+32;6;AWS;Aws;TBD;cloud;fm;06_aws.png
+33;7;Azure;Az;TBD;cloud;pd;07_azure.png
+34;8;Google Cloud;Gc;TBD;cloud;en;08_google cloud.png
+35;9;OpenShift;Op;TBD;cloud;fm;09_openshift.png
+36;10;Sumo Logic;Sg;TBD;aiops;fm;010_sumo logic.png
+37;11;GitLab;Gl;gitlab.com;source;os;011_gitlab.png
+38;12;DBMaestro;Db;TBD;database;en;012_dbmaestro.png
+39;null;;;;;;
+40;null;;;;;;
+41;null;;;;;;
+42;null;;;;;;
+43;null;;;;;;
+44;null;;;;;;
+45;null;;;;;;
+46;null;;;;;;
+47;null;;;;;;
+48;null;;;;;;
+49;13;Docker;Dk;TBD;containers;os;013_docker.png
+50;14;UrbanCode Release;Ur;TBD;release;en;014_urbancode release.png
+51;15;Azure Functions;Af;TBD;cloud;pd;015_azure functions.png
+52;16;Lambda;Ld;TBD;cloud;pd;016_lambda.png
+53;17;IBM Cloud;Ic;TBD;cloud;fm;017_ibm cloud.png
+54;18;Fluentd;Fd;TBD;aiops;os;018_fluentd.png
+55;19;ISPW;Cw;TBD;source;en;019_ispw.png
+56;20;Delphix;Dp;TBD;database;en;020_delphix.png
+57;21;Jenkins;Jn;TBD;ci;os;021_jenkins.png
+58;22;Codeship;Cs;TBD;ci;fm;022_codeship.png
+59;23;FitNesse;Fn;TBD;testing;os;023_fitnesse.png
+60;24;Junit;Ju;TBD;testing;fr;024_junit.png
+61;25;Karma;Ka;TBD;testing;fr;025_karma.png
+62;26;SoapUI;Su;TBD;testing;fm;026_soapui.png
+63;27;Chef;Ch;TBD;configuration;en;027_chef.png
+64;28;Terraform;Tf;TBD;configuration;fr;028_terraform.png
+65;29;XebiaLabs XL Deploy;XLd;TBD;deployment;en;029_xebialabs xl deploy.png
+66;30;UrbanCode Deploy;Ud;TBD;deployment;en;030_urbancode deploy.png
+67;31;Kubernetes;Ku;TBD;containers;os;031_kubernetes.png
+68;32;CA CD Director;Cc;TBD;release;fm;032_ca cd director.png
+69;33;Plutora Release;Pr;TBD;release;en;033_plutora release.png
+70;34;Alibaba Cloud;Al;TBD;cloud;pd;034_alibaba cloud.png
+71;35;OpenStack;Os;TBD;cloud;os;035_openstack.png
+72;36;Prometheus;Ps;TBD;aiops;os;036_prometheus.png
+73;37;Artifactory;At;TBD;source;pd;037_artifactory.png
+74;38;Redgate;Rg;TBD;database;fm;038_redgate.png
+75;39;Bamboo;Ba;TBD;ci;pd;039_bamboo.png
+76;40;VSTS;Vs;TBD;ci;fm;040_vsts.png
+77;41;Selenium;Se;TBD;testing;fr;041_selenium.png
+78;42;Jmeter;Jm;TBD;testing;fr;042_jmeter.png
+79;43;Jasmine;Ja;TBD;testing;os;043_jasmine.png
+80;44;Sauce Labs;Sl;TBD;testing;pd;044_sauce labs.png
+81;45;Ansible;An;TBD;configuration;en;045_ansible.png
+82;46;Rudder;Ru;TBD;configuration;os;046_rudder.png
+83;47;Octopus Deploy;Oc;TBD;deployment;en;047_octopus deploy.png
+84;48;GoCD;Go;TBD;deployment;os;048_gocd.png
+85;49;Mesos;Ms;TBD;containers;os;049_mesos.png
+86;50;GKE;Gke;TBD;containers;pd;050_gke.png
+87;51;OpenMake;Om;TBD;release;pd;051_openmake.png
+88;52;AWS CodePipeline;Cp;TBD;release;pd;052_aws codepipeline.png
+89;53;Cloud Foundry;Cy;TBD;cloud;pd;053_cloud foundry.png
+90;54;ITRS;It;TBD;aiops;en;054_itrs.png
+91;55;Nexus;Nx;TBD;source;pd;055_nexus.png
+92;56;Flyway;Fw;TBD;database;os;056_flyway.png
+93;57;Travis CI;Tr;TBD;ci;os;057_travis ci.png
+94;58;TeamCity;Tc;TBD;ci;fm;058_teamcity.png
+95;59;Gatling;Ga;TBD;testing;os;059_gatling.png
+96;60;TestNG;Tn;TBD;testing;fr;060_testng.png
+97;61;Tricentis Tosca;Tt;TBD;testing;fm;061_tricentis tosca.png
+98;62;Perfecto;Pe;TBD;testing;pd;062_perfecto.png
+99;63;Puppet;Pu;TBD;configuration;en;063_puppet.png
+100;64;Packer;Pa;TBD;configuration;os;064_packer.png
+101;65;AWS CodeDeploy;Cd;TBD;deployment;fm;065_aws codedeploy.png
+102;66;ElectriCloud;Ec;TBD;deployment;en;066_electricloud.png
+103;67;Rancher;Ra;TBD;containers;os;067_rancher.png
+104;68;AKS;Aks;TBD;containers;pd;068_aks.png
+105;69;Rkt;Rk;TBD;containers;os;069_rkt.png
+106;70;Spinnaker;Sp;TBD;release;os;070_spinnaker.png
+107;71;Iron.io;Ir;TBD;cloud;pd;071_iron.io.png
+108;72;Moogsoft;Mg;TBD;aiops;pd;072_moogsoft.png
+109;73;BitBucket;Bb;TBD;source;fm;073_bitbucket.png
+110;74;Perforce;Pf;TBD;source;en;074_perforce.png
+111;75;Circle CI;Cr;TBD;ci;fm;075_circle ci.png
+112;76;AWS CodeBuild;Cb;TBD;ci;pd;076_aws codebuild.png
+113;77;Cucumber;Cu;TBD;testing;fr;077_cucumber.png
+114;78;Mocha;Mc;TBD;testing;os;078_mocha.png
+115;79;Locust.io;Lo;TBD;testing;os;079_locust.io.png
+116;80;MicroFocus UFT;Mf;TBD;testing;en;080_microfocus uft.png
+117;81;Salt;Sa;TBD;configuration;os;081_salt.png
+118;82;CFEngine;Ce;TBD;configuration;os;082_cfengine.png
+119;83;ElasticBox;Eb;TBD;deployment;en;083_elasticbox.png
+120;84;CA Automic;Ca;TBD;deployment;en;084_ca automic.png
+121;85;Docker Enterprise;De;TBD;containers;en;085_docker enterprise.png
+122;86;AWS ECS;Ae;TBD;containers;pd;086_aws ecs.png
+123;87;Codefresh;Cf;TBD;containers;fm;087_codefresh.png
+124;88;Helm;Hm;TBD;containers;os;088_helm.png
+125;89;Apache OpenWhisk;Aws;TBD;cloud;os;089_apache openwhisk.png
+126;90;Logstash;Ls;TBD;aiops;os;090_logstash.png

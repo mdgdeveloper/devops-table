@@ -1,0 +1,22 @@
+.tableWrapper {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-row-gap: 5px;
+}
+
+.table2 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-row-gap: 5px;
+  margin-top: 50px;
+}
