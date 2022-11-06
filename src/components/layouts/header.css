@@ -25,3 +25,8 @@
 .h-mainLogo {
   width: 15vh;
 }
+
+.h-right {
+  display: flex;
+  gap: 1.5vw;
+}

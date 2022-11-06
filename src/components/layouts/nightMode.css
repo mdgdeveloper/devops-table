@@ -1,2 +1,13 @@
 .nm-main {
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nm-main:hover {
+  border: 2px solid darkorange;
+  border-radius: 5px;
 }

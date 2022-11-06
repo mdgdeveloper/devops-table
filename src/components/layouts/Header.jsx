@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import NightMode from "./NightMode";
 
 const Header = () => {
   return (
@@ -9,7 +10,9 @@ const Header = () => {
         <img src="/mainLogo2.png" alt="logo" className="h-mainLogo" />
       </div>
       <div className="h-right">
-        <div className="h-mode">NightMode</div>
+        <div className="h-mode">
+          <NightMode />
+        </div>
         <div className="h-lang">Language</div>
       </div>
     </div>
