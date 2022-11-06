@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import Language from "./Language";
 import NightMode from "./NightMode";
 
 const Header = () => {
@@ -13,7 +14,9 @@ const Header = () => {
         <div className="h-mode">
           <NightMode />
         </div>
-        <div className="h-lang">Language</div>
+        <div className="h-lang">
+          <Language />
+        </div>
       </div>
     </div>
   );

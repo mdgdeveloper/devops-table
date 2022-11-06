@@ -927,7 +927,7 @@ export const elementList = [
     link: "TBD",
     type: "ci",
     license: "os",
-    logo: "057_travis ci.png",
+    logo: "057_travis.png",
   },
   {
     id: 94,
@@ -1107,7 +1107,7 @@ export const elementList = [
     link: "TBD",
     type: "ci",
     license: "fm",
-    logo: "075_circle ci.png",
+    logo: "075_circle.png",
   },
   {
     id: 112,
@@ -1117,7 +1117,7 @@ export const elementList = [
     link: "TBD",
     type: "ci",
     license: "pd",
-    logo: "076_aws codebuild.png",
+    logo: "076_codebuild.png",
   },
   {
     id: 113,
