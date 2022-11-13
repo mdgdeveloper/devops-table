@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../hooks/context";
 import "./language.css";
 
-const Language = ({ current = "en" }) => {
+const Language = () => {
+  const [context, setContext] = useContext(Context);
   const getStyle = (lang) => {
-    if (lang === current)
-      return {
-        opacity: 1,
-      };
-    else
-      return {
-        opacity: 0.2,
-      };
+    if (lang === context.lang) return "lag-selected";
+    else return "lag-notSelected";
+  };
+
+  const handleClick = (language) => {
+    const currentContext = { ...context, lang: language };
+    setContext(currentContext);
   };
 
   return (
     <div className="lag-main">
-      <div className="lag-flag">
-        <img src="flags/es.svg" alt="ES" style={getStyle("es")} />
+      <div className="lag-flag" onClick={() => handleClick("es")}>
+        <img src="flags/es.svg" alt="ES" className={getStyle("es")} />
       </div>
-      <div className="lag-flag">
-        <img src="flags/en.svg" alt="EN" style={getStyle("en")} />
+      <div className="lag-flag" onClick={() => handleClick("en")}>
+        <img src="flags/en.svg" alt="EN" className={getStyle("en")} />
       </div>
     </div>
   );

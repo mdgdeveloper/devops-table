@@ -1,3 +1,10 @@
+:root {
+  --day-bg-color: white;
+  --day-color: black;
+  --night-bg-color: #cccccc;
+  --night-color: white;
+}
+
 .global {
   display: flex;
   flex-direction: column;
@@ -6,6 +13,19 @@
   margin: 0;
   padding: 0px;
   background-color: rgba(0, 0, 0, 0.02);
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 400;
+}
+
+.global-night {
+  display: flex;
+  flex-direction: column;
+  min-height: 98vh;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0px;
+  background-color: #333333;
+  color: #dddddd;
   font-family: "Segoe UI", sans-serif;
   font-weight: 400;
 }

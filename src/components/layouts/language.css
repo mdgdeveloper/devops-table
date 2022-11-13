@@ -11,3 +11,11 @@
   width: 1.5vw;
   height: 1.5vw;
 }
+
+.lag-notSelected {
+  opacity: 0.2;
+}
+
+.lag-notSelected:hover {
+  opacity: 0.9;
+}

@@ -33,22 +33,30 @@ const ElementInfo = ({ element }) => {
               {getLicense(element.license)}
             </Tag>
           </div>
-          <div className="ei-elementCourses">
-            <h2 className="ei-elementCoursesHead">Courses available:</h2>
-            <ul>
-              <li>Uno</li>
-              <li>Uno</li>
-              <li>Uno</li>
-            </ul>
-          </div>
-          <div className="ei-elementCourses">
-            <h2 className="ei-elementCoursesHead">Certifications:</h2>
-            <ul>
-              <li>Uno</li>
-              <li>Uno</li>
-              <li>Uno</li>
-            </ul>
-          </div>
+          {element.courses && (
+            <div className="ei-elementCourses">
+              <h2 className="ei-elementCoursesHead">Courses available:</h2>
+              <ul>
+                {element.courses.map((course) => (
+                  <li>
+                    <a href={course.link} target="_blank">
+                      {course.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {element.certifications && (
+            <div className="ei-elementCourses">
+              <h2 className="ei-elementCoursesHead">Certifications:</h2>
+              <ul>
+                <li>Uno</li>
+                <li>Uno</li>
+                <li>Uno</li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </>

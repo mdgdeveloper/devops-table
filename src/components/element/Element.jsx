@@ -19,7 +19,6 @@ import ElementInfo from "../elementInfo/ElementInfo";
 const Element = ({ element }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const bgColor = getColor(element.type);
-  console.log("bgColor", bgColor);
   return (
     <>
       <div
@@ -38,7 +37,11 @@ const Element = ({ element }) => {
             <div className="elementShortName">{element.shortName}</div>
           </div>
           <div className="elementFooter">
-            <div className="elementName">{element.name}</div>
+            <div className="elementName">
+              {element.name.length > 13
+                ? element.name.slice(0, 8) + "..."
+                : element.name}
+            </div>
           </div>
         </div>
       </div>

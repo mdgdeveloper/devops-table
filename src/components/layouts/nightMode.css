@@ -1,4 +1,4 @@
-.nm-main {
+.nm-main-day {
   cursor: pointer;
   width: 1.8vw;
   height: 1.8vw;
@@ -7,7 +7,21 @@
   align-items: center;
 }
 
-.nm-main:hover {
+.nm-main-night {
+  cursor: pointer;
+  width: 1.8vw;
+  height: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nm-main-day:hover {
   border: 2px solid darkorange;
+  border-radius: 5px;
+}
+
+.nm-main-night:hover {
+  border: 2px solid darkgray;
   border-radius: 5px;
 }

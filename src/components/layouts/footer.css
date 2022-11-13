@@ -1,0 +1,9 @@
+.f-global {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px -14px 28px,
+    rgba(0, 0, 0, 0.05) 0px -10px 10px;
+}
