@@ -24,9 +24,9 @@ export const langES = {
   content12: "Estáte atento porque iremos actualizando la web.",
   subtitle2: "¿Cómo funciona?",
   content21:
-    "Haz click en cualquiero de los elementos y un panel informativo aparecerá con todos los datos relacionados con esa tecnologia y recursos adicionales",
+    "Haz click en cualquiera de los elementos y un panel informativo aparecerá con todos los datos relacionados con esa tecnologia y recursos adicionales",
   content22:
-    "Cursos relacionads (gratis o de pago) aparecerán también para ser utilizados en el panel informativo.",
+    "También aparecerán cursos relacionados (gratis o de pago) para que puedas utilizarlos si los necesitas.",
   os: "Open Source",
   fr: "Free",
   fm: "Freemium",
