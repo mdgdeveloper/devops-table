@@ -8,7 +8,7 @@
 .global {
   display: flex;
   flex-direction: column;
-  height: 98vh;
+  min-height: 98vh;
   justify-content: space-between;
   margin: 0;
   padding: 0px;
