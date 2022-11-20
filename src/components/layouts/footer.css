@@ -1,5 +1,4 @@
 .f-global {
-  min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,4 +6,28 @@
   box-shadow: rgba(0, 0, 0, 0.01) 0px -14px 28px,
     rgba(0, 0, 0, 0.05) 0px -10px 10px;
   background-color: #5a90bc;
+  min-height: 35vh;
+  color: #cccccc;
+}
+
+.f-double {
+  border-bottom: 1px solid red;
+}
+.f-flex {
+  display: flex;
+  padding: 5vw;
+  gap: 2vw;
+  border-bottom: 1px solid white;
+}
+
+.f-left {
+  flex: 2;
+}
+
+.f-center {
+  flex: 1;
+}
+
+.f-right {
+  flex: 1;
 }
