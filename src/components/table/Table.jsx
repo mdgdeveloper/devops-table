@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { elementExtra, elementList } from "../../data/elementList";
 import Element from "../element/Element";
 import Empty from "../empty/Empty";
 import "./table.css";
 
-const Table = () => {
+const Table = ({ licenseFilter, typeFilter }) => {
   return (
     <div className="tableWrapper">
       <div className="table">
         {elementList.map((element) => {
           if (element.atomNum !== null) {
             {
-              return <Element element={element} />;
+              return (
+                <Element
+                  element={element}
+                  licenseFilter={licenseFilter}
+                  typeFilter={typeFilter}
+                />
+              );
             }
           } else {
             return <Empty />;
@@ -22,7 +28,13 @@ const Table = () => {
         {elementExtra.map((element) => {
           if (element.atomNum !== null) {
             {
-              return <Element element={element} />;
+              return (
+                <Element
+                  element={element}
+                  licenseFilter={licenseFilter}
+                  typeFilter={typeFilter}
+                />
+              );
             }
           } else {
             return <Empty />;

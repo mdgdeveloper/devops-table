@@ -1,31 +1,56 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { BsMastodon } from "react-icons/bs";
+import { FaTwitterSquare } from "react-icons/fa";
+import { SiHashnode } from "react-icons/si";
+import { Context } from "../../hooks/context";
+import { langEN, langES } from "../../locale";
 import "./footer.css";
 const Footer = () => {
+  const [context, setContext] = useContext(Context);
+  const [text, setText] = useState(langEN);
+
+  useEffect(() => {
+    if (context.lang === "es") setText(langES);
+    if (context.lang === "en") setText(langEN);
+  }, [context]);
+
   return (
     <div className="f-global">
       <div className="f-double">
         <div className="f-flex">
           <div className="f-left">
-            <div className="f-logo">logo</div>
-            <div className="f-logo-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Molestiae, nisi amet qui distinctio aut totam suscipit
-              repudiandae, esse voluptatibus praesentium accusantium id a! Nam,
-              corporis laboriosam magni iure quisquam cumque?
+            <div className="f-logo">
+              <img src="/logo.png" alt="devOps Table Logo" />
+              <div className="f-logo-title">devOps</div>
             </div>
+            <div className="f-logo-text">{text.logo}</div>
           </div>
           <div className="f-center">
-            <div className="f-title">Contact Us</div>
-            <div className="f-center-mail">contact@mdgdev.xyz</div>
+            <div className="f-title">{text.contact}</div>
+            <div className="f-center-mail">
+              <a href="mailto:contact@mdgdev.xyz">contact@mdgdev.xyz</a>
+            </div>
             <div className="f-center-info">Valencia. Spain. Europe.</div>
           </div>
           <div className="f-right">
-            <div className="f-title">Follow Us</div>
-            <div className="f-right-text">Yes, you can follow us!</div>
+            <div className="f-title">{text.follow}</div>
+            <div className="f-right-text">{text.followTest}</div>
             <div className="f-right-social">
-              <div className="f-social-item">Twitter</div>
-              <div className="f-social-item">Mastodon</div>
-              <div className="f-social-item">Hashnode</div>
+              <div className="f-social-item">
+                <a href="https://twitter.com/sergiomadrigal">
+                  <FaTwitterSquare />
+                </a>
+              </div>
+              <div className="f-social-item">
+                <a href="https://mastodon.social/@mdgdev">
+                  <BsMastodon />
+                </a>
+              </div>
+              <div className="f-social-item">
+                <a href="https://mdgdev.xyz">
+                  <SiHashnode />
+                </a>
+              </div>
             </div>
           </div>
         </div>

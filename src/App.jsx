@@ -14,6 +14,10 @@ import languageData from "./locale/index";
 import { Context } from "./hooks/context";
 
 function App() {
+  const [licenseFilter, setLicenseFilter] = useState(null);
+  const [typeFilter, setTypeFilter] = useState(null);
+  const [myStack, setMyStack] = useState(false);
+
   const [context, setContext] = useState({
     lang: "en",
     mode: "day",
@@ -55,8 +59,15 @@ function App() {
                 <p className="a-paragraph">{language.content22}</p>
               </div>
             </div>
-            <Legend />
-            <Table />
+            <Legend
+              licenseFilter={licenseFilter}
+              setLicenseFilter={setLicenseFilter}
+              typeFilter={typeFilter}
+              setTypeFilter={setTypeFilter}
+              setMyStack={setMyStack}
+              myStack={myStack}
+            />
+            <Table licenseFilter={licenseFilter} typeFilter={typeFilter} />
             <Footer />
           </>
         ) : (

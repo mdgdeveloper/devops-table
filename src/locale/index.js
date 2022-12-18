@@ -14,6 +14,12 @@ export const langEN = {
   fm: "Freemium",
   pd: "Paid",
   en: "Enterprise",
+  logo: "DevOps Table is an application made with love by mdgDev and pretends to provide useful information to any DevOps engineer willing to understand the whole map of tools for the job.",
+  contact: "contact us",
+  follow: "follow us",
+  followTest: "Yes you can follow us!",
+  license: "Remove License Filter",
+  type: "Remove Type filter",
 };
 
 export const langES = {
@@ -32,6 +38,12 @@ export const langES = {
   fm: "Freemium",
   pd: "Paid",
   en: "Enterprise",
+  logo: "DevOps table es una aplicación desarrollada con amor por mdgDev que pretende proporcionar información útil para ingenieros DevOps que quieran entender y conocer todas las herramientas para realizar su trabajo.",
+  contact: "contacta",
+  follow: "siguenos",
+  followTest: "¡Sí, puedes seguirme!",
+  license: "Eliminar Filtro de Licencia",
+  type: "Eliminar Filtro de Tipo",
 };
 
 export const langCAT = {

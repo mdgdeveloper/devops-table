@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaLink } from "react-icons/fa";
 import { getColor, getColorBg } from "../../utils/getColor";
 import "./element.css";
@@ -14,15 +14,29 @@ import {
   ModalOverlay,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 import ElementInfo from "../elementInfo/ElementInfo";
 
-const Element = ({ element }) => {
+const Element = ({ element, licenseFilter, typeFilter }) => {
+  const [elementStyle, setElementStyle] = useState("elementMain");
   const { isOpen, onOpen, onClose } = useDisclosure();
   const bgColor = getColor(element.type);
+
+  useEffect(() => {
+    if (
+      (element.license !== licenseFilter && licenseFilter) ||
+      (element.type !== typeFilter && typeFilter)
+    ) {
+      setElementStyle("elementMain elementMainDisabled");
+    } else {
+      setElementStyle("elementMain");
+    }
+  }, [licenseFilter, typeFilter]);
+
   return (
     <>
       <div
-        className="elementMain"
+        className={elementStyle}
         style={{ backgroundColor: bgColor }}
         onClick={onOpen}
       >

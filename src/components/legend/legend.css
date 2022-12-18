@@ -1,3 +1,20 @@
+.lg-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lg-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+  min-height: 4vh;
+}
+
+.lg-message {
+}
+
 .lg-main {
   display: flex;
   justify-content: center;
@@ -20,6 +37,22 @@
   gap: 5px;
   align-items: center;
   margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.lg-license-item-selected {
+  font-weight: 500;
+  color: #3f88c5;
+  text-decoration: underline;
+}
+
+.lg-type-item-selected {
+  font-weight: 500;
+  color: #f22b29;
+  text-decoration: underline;
+}
+.lg-license-item-text:hover {
+  text-decoration: underline;
 }
 
 .lg-license-item-logo {
@@ -47,6 +80,11 @@
   align-items: center;
   margin-bottom: 5px;
   margin-right: 25px;
+  cursor: pointer;
+}
+
+.lg-type-item-text:hover {
+  text-decoration: underline;
 }
 
 .lg-type-item-color {
