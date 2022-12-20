@@ -28,6 +28,7 @@ const Legend = ({
     if (context.lang === "en") {
       setLicenses(licensesEN);
       setTypes(typesEN);
+      setLanguage(langEN);
     }
     if (context.lang === "es") {
       setLicenses(licensesES);
